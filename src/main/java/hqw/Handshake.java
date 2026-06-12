@@ -9,8 +9,8 @@ public class Handshake {
 	private static boolean isQuantumTunnel() {
 		
 		//100万分の1を10回通過→10＾-60の確率
-		for (int i = 0; i < 2; i++) {
-			int value = random.nextInt(2);
+		for (int i = 0; i < 10; i++) {
+			int value = random.nextInt(1_000_000);
 			if (value != 0) {
 				return false;  //どこか外れたら失敗
 			}
